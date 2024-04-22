@@ -13,7 +13,7 @@
     font-size: 14px;
     text-align: left;
     line-height: 25px;
-    color: rgb(189, 222, 109);
+    color: rgb(109, 111, 109);
 }
 
 #userInput {
@@ -49,4 +49,10 @@ h1 {
     color: rgb(57, 72, 57);
 }
 
-/* Next: Part 19 */
+.userText {
+    font-family: monospace;
+    font-size: 14px;
+    text-align: right;
+    line-height: 25px;
+    color: rgb(109, 111, 109);
+}

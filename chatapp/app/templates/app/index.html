@@ -7,7 +7,10 @@
     <title>Document</title>
 
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'app/styles.css' %}"
+    <link rel="stylesheet" type="text/css" href="{% static 'app/styles.css' %}" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <h1>EDUGUIDEBOT</h1>
@@ -22,5 +25,26 @@
         </div>    
     </div>
     
+    <script>
+        $(document).ready(function(){
+            function getUserResponse() {
+                var userText = $('#textInput').val();
+                var userHTML = "<p class='userText'>User: <span>"+userText+"</span>";    
+                $('#textInput').val("");
+                $('#chatbot').append(userHTML);  
+                
+                $.get('/app/getResponse', {userMessage:userText}).done(function(data){
+                    var returnedMessage = "<p class='botText'>Chatbot: <span>"+data+"</span></p>"
+                    $('#chatbot').append(returnedMessage);
+                })
+            }
+            
+            $('#buttonInput').click(function(){
+                getUserResponse();
+            });
+        });
+    </script>
+
+
 </body>
 </html>
