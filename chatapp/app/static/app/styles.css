@@ -55,4 +55,6 @@ h1 {
     text-align: right;
     line-height: 25px;
     color: rgb(109, 111, 109);
+    padding-top: 20px;
+    border-top: 1px solid #afafaf;
 }
