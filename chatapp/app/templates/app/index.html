@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EDUGUIDEBOT</title>
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'app/styles.css' %}" />
+    <link rel="icon" type="image" href="https://cdn.discordapp.com/attachments/1062192524837535794/1233084889277009970/eduguidebot_logo.jpg?ex=662bcf4b&is=662a7dcb&hm=002cc0d724a29863e2251345516d4976b41e7b2dd8e1573ffb63032f5e7a98ba&">
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
@@ -33,7 +34,7 @@
                 $('#textInput').val("");
                 $('#chatbot').append(userHTML);  
                 
-                $.get('/app/getResponse', {userMessage:userText}).done(function(data){
+                $.get('/getResponse', {userMessage:userText}).done(function(data){
                     var returnedMessage = "<p class='botText'>Chatbot: <span>"+data+"</span></p>"
                     $('#chatbot').append(returnedMessage);
                 })
