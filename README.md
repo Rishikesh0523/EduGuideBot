@@ -54,5 +54,48 @@ Previous studies and developments in the field of chatbots and AI-assisted educa
 ## Expected Outcome:
 The successful implementation of the Engineering Entrance Chatbot is expected to result in a user-friendly, intelligent system that significantly simplifies the application process for engineering aspirants. The chatbot's ability to provide accurate, real-time information, personalized guidance, and multilingual support is anticipated to enhance the overall experience of students navigating the complexities of engineering entrance exams, leading to increased confidence and informed decision-making.
 
+
+#### Getting Started:
+
+1. **Activate Virtual Environment:**
+   - Navigate to the project directory: `cd chatapp/`
+   - Activate the virtual environment for Python:
+     ```
+     # For Windows
+     venv\Scripts\activate
+     # For Unix or MacOS
+     source venv/bin/activate
+     ```
+
+2. **Install Dependencies:**
+   - Use pip to install the required packages listed in `requirements.txt`:
+     ```
+     pip install -r requirements.txt
+     ```
+
+3. **Run Migrations:**
+   - Ensure your database schema is up-to-date by running migrations:
+     ```
+     python manage.py migrate
+     ```
+
+#### Usage:
+
+- Once the virtual environment is activated, dependencies are installed, and migrations are applied, you can start using the EDUGUIDEBOT application.
+
+- To run the development server, execute the following command:
+
+```
+python manage.py runserver
+```
+
+- Access the application by navigating to `http://localhost:8000/` in your web browser.
+
+#### Additional Notes:
+
+- Make sure to keep your virtual environment activated whenever you're working on the project to ensure compatibility with the installed dependencies.
+- If you encounter any issues during setup or usage, refer to the project's documentation or seek assistance from the project team.
+
+
 ## Conclusion:
 By developing a sophisticated chatbot with text processing and AI/ML capabilities, this project aims to provide a user-friendly solution for engineering entrance exam aspirants, helping them navigate the complexities of the application process, fees, and other related queries.
