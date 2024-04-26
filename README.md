@@ -55,7 +55,7 @@ Previous studies and developments in the field of chatbots and AI-assisted educa
 The successful implementation of the Engineering Entrance Chatbot is expected to result in a user-friendly, intelligent system that significantly simplifies the application process for engineering aspirants. The chatbot's ability to provide accurate, real-time information, personalized guidance, and multilingual support is anticipated to enhance the overall experience of students navigating the complexities of engineering entrance exams, leading to increased confidence and informed decision-making.
 
 
-#### Getting Started:
+## Getting Started:
 
 1. **Activate Virtual Environment:**
    - Navigate to the project directory: `cd chatapp/`
